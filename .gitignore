@@ -1,0 +1,51 @@
+# Arquivos de usuário do Visual Studio
+*.suo
+*.user
+*.useros
+*.sln.docstates
+
+# Binários de build
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Pacotes NuGet
+[Pp]ackages/
+*.nupkg
+.nuget/
+# Pacotes de cache do Visual Studio 2017 e 2019
+.vs/
+.vs/[Aa]ny/
+
+# Arquivos de cache e outros
+*.cache
+*.scc
+*.vspscc
+*.vssscc
+
+# Testes de unidade
+TestResults/
+
+# Arquivos de log e outros
+*.log
+*.pfx
+*.snk
+*.pub
+*.pdb
+*.orig
+*.tlog
+
+# Vários arquivos gerados pelo Visual Studio
+*.tmp
+*.vs/
+*.vshost.exe
+*.vshost.exe.config
+*.vshost.exe.manifest
+_ReSharper.*/
+[Pp]ublish/
+
+# Pastas de pacotes
+**/[Pp]ackages/
+**/node_modules/
+**/bower_components/
