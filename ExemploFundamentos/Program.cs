@@ -1,9 +1,23 @@
 ﻿using ExemploFundamentos.Common.Models;
 
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Batista";
-pessoa1.Idade = 53;
-pessoa1.Apresentar();
+
+
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Add("SC");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Remove("MG");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 
 
@@ -15,9 +29,82 @@ pessoa1.Apresentar();
 
 
 
+// Console.WriteLine("Percorrendo a Lista com o FOR");
+// for (int contador = 0; contador < listaString.Count; contador++)
+// {
+//     Console.WriteLine($"Posição Nº {contador} - {listaString[contador]}");
+// }
+
+// Console.WriteLine("\nPercorrendo a Lista com o FOREACH");
+// int contadorForeach = 0;
+// foreach (string item in listaString)
+// {
+//     Console.WriteLine($"Posição Nº {contadorForeach} - {item}");
+// }
 
 
 
+
+
+
+// string[] daysOfWeek = { "seg", "ter", "qua", "qui", "sex", "sab", "dom" };
+		
+// 		Console.WriteLine("Usando Foreach");
+// 		int contador = 1;
+// 		foreach(string day in daysOfWeek)
+// 		{
+// 			Console.WriteLine($"Dia: {contador} - {day}");
+// 			contador++;
+// 		}
+		
+// 		Console.WriteLine("\nUsando For");
+// 		for(int contadorFor = 0; contadorFor < daysOfWeek.Length; contadorFor++)
+// 		{
+// 			Console.WriteLine($"Dia: {contadorFor + 1} - {daysOfWeek[contadorFor]}");
+// 		}
+		
+
+
+// int[] arrayInteiros = new int[4];
+
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[3] = 1;
+
+
+// int[] arrayInyteirosDobrado = new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInyteirosDobrado, arrayInteiros.Length);
+
+// // Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+
+// Console.WriteLine("Percorrendo o Array com o FOR");
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} - {arrayInteiros[contador]}");
+// }
+
+
+
+
+
+
+// Console.WriteLine("Percorrendo o Array com o FOREACH");
+
+// int contadorForeach = 0;
+// foreach (int valor in arrayInteiros)
+// {
+//     Console.WriteLine($"Posição N° {contadorForeach} - {valor}");
+//     contadorForeach++;
+// }
+
+
+
+// Pessoa pessoa1 = new Pessoa();
+// pessoa1.Nome = "Batista";
+// pessoa1.Idade = 53;
+// pessoa1.Apresentar();
 
 
 
