@@ -17,6 +17,13 @@ Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {lis
 
 listaString.Remove("MG");
 
+#region Removendo um item da lista
+// Esta remoção foi feita 
+// para podermos entender como a remoção/adição
+// de um item numa lista em C# trata a capacidade da lista 
+// de forma dinâmica, aumentando-a ou diminuindo-a para se adequar corretamente.
+#endregion
+
 Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 
@@ -48,7 +55,7 @@ Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {lis
 
 
 // string[] daysOfWeek = { "seg", "ter", "qua", "qui", "sex", "sab", "dom" };
-		
+
 // 		Console.WriteLine("Usando Foreach");
 // 		int contador = 1;
 // 		foreach(string day in daysOfWeek)
@@ -56,13 +63,13 @@ Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {lis
 // 			Console.WriteLine($"Dia: {contador} - {day}");
 // 			contador++;
 // 		}
-		
+
 // 		Console.WriteLine("\nUsando For");
 // 		for(int contadorFor = 0; contadorFor < daysOfWeek.Length; contadorFor++)
 // 		{
 // 			Console.WriteLine($"Dia: {contadorFor + 1} - {daysOfWeek[contadorFor]}");
 // 		}
-		
+
 
 
 // int[] arrayInteiros = new int[4];
@@ -234,7 +241,7 @@ Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {lis
 
 // calc.Somar(10, 30);
 // calc.Subtrair(10, 50);
-// calc.Multipicart(15, 45);
+// calc.Multiplicar(15, 45);
 // calc.Dividir(2, 2);
 // calc.Potencia(3, 3);
 // calc.Seno(30);

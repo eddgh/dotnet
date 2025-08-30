@@ -17,7 +17,7 @@ namespace ExemploFundamentos.Common.Models
             Console.WriteLine($"{x} - {y} = {x - y}");
         }
 
-        public void Multipicart(int x, int y)
+        public void Multiplicar(int x, int y)
         {
             Console.WriteLine($"{x} x {y} = {x * y}");
         }
